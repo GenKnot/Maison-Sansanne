@@ -9,31 +9,31 @@ export default function Project() {
             name: "Civic Syntax",
             subtitle: "当节奏成为建筑",
             description: "节奏、结构、秩序、理性",
-            image: "/sansanne网站/商业设计/Maison Sansanne Urban｜Civic Syntax 当节奏成为建筑。/V1.jpg"
+            image: "/images/projects/urban-1.jpg"
         },
         {
             name: "Bloom Atelier",
             subtitle: "在理性的结构中，让花开成为一种温度",
             description: "都市静谧、柔光秩序、木质理性",
-            image: "/sansanne网站/商业设计/Maison Sansanne Urban｜Bloom Atelier 在理性的结构中，让花开成为一种温度。/C5.jpg"
+            image: "/images/projects/urban-2.jpg"
         },
         {
             name: "Verdant Court",
             subtitle: "几何与自然在此共呼吸",
             description: "自然、几何、平衡、宁静",
-            image: "/sansanne网站/商业设计/Maison Sansanne Urban｜Verdant Court 几何与自然在此共呼吸，让日常的用餐成为一种平静的仪式。/F1.jpg"
+            image: "/images/projects/urban-3.jpg"
         },
         {
             name: "Digital Loft",
             subtitle: "在光与逻辑之间",
             description: "光、逻辑、理性、温度",
-            image: "/sansanne网站/商业设计/Maison Sansanne Urban｜Digital Loft 在光与逻辑之间，理性找到它的温度。/g1.jpg"
+            image: "/images/projects/urban-4.jpg"
         },
         {
             name: "Kinetic Sanctuary",
             subtitle: "光线如能量的脉搏",
             description: "光能、运动、秩序、流动",
-            image: "/sansanne网站/商业设计/Maison Sansanne Urban｜Kinetic Sanctuary 光线如能量的脉搏，在秩序中流动。/X1.jpg"
+            image: "/images/projects/urban-5.jpg"
         }
     ];
 
@@ -42,31 +42,31 @@ export default function Project() {
             name: "Flowing Light",
             subtitle: "在白与光之间，以最轻的手法",
             description: "光线、时间、柔和",
-            image: "/sansanne网站/室内设计/Maison Sansanne Home｜Flowing Light 在白与光之间，以最轻的手法，描绘生活的呼吸。/myst-Z风格1.jpg"
+            image: "/images/projects/home-1.jpg"
         },
         {
             name: "Lunar Stillness",
             subtitle: "在柔光与石质的呼吸间",
             description: "月光、银灰、棕、极简",
-            image: "/sansanne网站/室内设计/Maison Sansanne Home｜Lunar Stillness 在柔光与石质的呼吸间，理性与诗意共存，光成为秩序的语言。/Moonbeam色调设计2.jpg"
+            image: "/images/projects/home-2.jpg"
         },
         {
             name: "Obsidian Calm",
             subtitle: "黑曜的深沉与火光的温度",
             description: "深灰、石材、暗、光、静奢",
-            image: "/sansanne网站/室内设计/Maison Sansanne Home｜Obsidian Calm 黑曜的深沉与火光的温度，共同定义了当代安静奢华的最高形态。/encore residence3.jpg"
+            image: "/images/projects/home-3.jpg"
         },
         {
             name: "Traces of Warmth",
             subtitle: "温度，是空间最克制也最动人的情绪",
             description: "触感、留白、灰米棕、柔和",
-            image: "/sansanne网站/室内设计/Maison Sansanne Home｜Traces of Warmth 温度，是空间最克制也最动人的情绪。/aldred project软装2.jpg"
+            image: "/images/projects/home-4.jpg"
         },
         {
             name: "Whispering Light",
             subtitle: "线条柔中带力，材质静中藏光",
             description: "木质、景观、呼吸、时光",
-            image: "/sansanne网站/室内设计/Maison Sansanne Home｜Whispering Light 线条柔中带力，材质静中藏光，生活于此成为秩序的艺术。/Y风格1.jpg"
+            image: "/images/projects/home-5.jpg"
         }
     ];
 

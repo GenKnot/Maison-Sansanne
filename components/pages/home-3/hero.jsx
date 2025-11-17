@@ -13,31 +13,31 @@ export default function Hero() {
 
     const images = [
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Flowing Light 在白与光之间，以最轻的手法，描绘生活的呼吸。/myst-Z风格3.jpg",
+            src: "/images/hero/hero-1.jpg",
             alt: "Flowing Light"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Whisper of Scent 香气、光影与节奏共存，家的美学在日常中被轻声唤醒。/A风格7.jpg",
+            src: "/images/hero/hero-2.jpg",
             alt: "Whisper of Scent"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Traces of Warmth 温度，是空间最克制也最动人的情绪。/aldred project软装3.jpg",
+            src: "/images/hero/hero-3.jpg",
             alt: "Traces of Warmth"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜The Study Series Explorations in Texture & Light/C风格.jpg",
+            src: "/images/hero/hero-4.jpg",
             alt: "The Study Series"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Whisper of Scent 香气、光影与节奏共存，家的美学在日常中被轻声唤醒。/A风格2.jpg",
+            src: "/images/hero/hero-5.jpg",
             alt: "Whisper of Scent"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Traces of Warmth 温度，是空间最克制也最动人的情绪。/aldred project软装6.jpg",
+            src: "/images/hero/hero-6.jpg",
             alt: "Traces of Warmth"
         },
         {
-            src: "/sansanne网站/室内设计/Maison Sansanne Home｜Whisper of Scent 香气、光影与节奏共存，家的美学在日常中被轻声唤醒。/A风格6.jpg",
+            src: "/images/hero/hero-7.jpg",
             alt: "Whisper of Scent"
         }
     ];
