@@ -19,10 +19,11 @@ export default function SidebarNavigation() {
             <div className="sidebar-logo">
                 <Link href="/">
                     <Image
-                        height={30}
-                        width={172}
-                        src="image/logo-dark.svg"
-                        alt="logo"
+                        height={50}
+                        width={220}
+                        src="/maison-sansanne-web-logo.svg"
+                        alt="Maison Sansanne"
+                        style={{ width: 'auto', height: '50px' }}
                     />
                 </Link>
             </div>

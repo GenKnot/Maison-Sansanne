@@ -3,12 +3,25 @@ import navigation from "@/data/navigation";
 import { isParentActive } from "@/lib/is-menu-active";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useDispatch } from "react-redux";
+import { toggleSidebar } from "@/redux/features/toggles/toggleSlice";
 
 export default function Navigation() {
     const path = usePathname();
+    const dispatch = useDispatch();
+
+    const closeMenu = () => {
+        dispatch(toggleSidebar());
+    };
 
     return (
         <>
+            <div className="mobile-menu-head">
+                <div className="mobile-menu-logo">
+                    <img src="/maison-sansanne-logo.svg" alt="Maison Sansanne" style={{ height: '40px', width: 'auto' }} />
+                </div>
+                <div className="mobile-menu-close" onClick={closeMenu}>×</div>
+            </div>
             <ul className="site-menu-main">
                 {navigation?.map((item, i) => (
                     <li key={i} className="nav-item nav-item-has-children">
