@@ -1,0 +1,96 @@
+Maison Sansanne Urban｜Kinetic Sanctuary
+在速度与静止之间， Maison Sansanne Urban 构筑出一座关于动能与秩序的殿堂。 光线在金属与镜面的折射中流动， 像是呼吸，也像心跳， 在克制的黑中，书写运动的秩序感。
+Kinetic Sanctuary 不仅是一处健身空间， 更是一座献给身体与精神的“动势圣域”。 力量不再被释放，而是被精确地控制与雕刻。 空间的线条被压缩成节奏， 灯光与结构共同构成无声的能量流动。
+Maison Sansanne Urban 以建筑的语言， 让速度、光线与力量在极简的逻辑中共存。 它不是运动的场所， 而是一种被感知、被调律的能量秩序。
+
+类型｜Type
+商业空间 · 健身房 / 都市运动体验馆
+
+关键词｜Keywords
+动能 · 秩序 · 光影 · 镜面反射 · 节奏
+
+设计语气｜Tone of Design
+冷静 · 克制 · 力量感 · 节奏感
+
+一句话总结｜Summary Sentence
+光线如能量的脉搏，在秩序中流动。
+
+🧩 网页图像布局建议
+视觉目标： 像一场“关于力量的展览”——节奏、反射、深度、呼吸。 整体以 深灰至黑色背景 为基底， 配 银灰与暖光点缀，制造“能量的流动感”。
+
+① Hero Section｜首屏
+
+主图：X1（全景黑色空间，灯带构图）
+
+
+标题： Maison Sansanne Urban｜Kinetic Sanctuary The Architecture of Controlled Energy
+
+
+文字置中浮层，字体极细，呼吸感留白大。
+
+
+② Concept Section｜空间概念
+
+版式：左右分栏
+
+
+左侧放文字前四段（叙述部分）
+
+
+右侧放 X3（反射灯带）
+
+
+背景深灰，文字浅灰（#DADADA）
+
+
+右图略带透光效果，与文段节奏呼应。
+
+
+③ Motion & Geometry Section｜动势与结构
+
+图片组：X4 + X5 + X6
+
+
+水平错落三图排列（类似建筑立面 rhythm）
+
+
+每张图宽高比相同，间距大
+
+
+居中小字说明：
+
+线条与光影构成了能量的几何， 每一次呼吸，都是秩序的延伸。
+
+
+④ Atmosphere Section｜体验氛围
+
+图片组：X7 + X8（楼梯与设备空间）
+
+
+垂直堆叠，X7 在上（俯瞰结构），X8 在下（局部反射）
+
+
+居中短句叠加文字层：
+
+空间成为身体的延伸， 力量在克制中被重塑。
+
+
+⑤ Closing Section｜品牌收尾
+
+图片：X9（整体空间远景）
+
+
+背景渐变至黑，文字白色居中： Maison Sansanne Urban We design rhythm, not repetition.
+
+
+🎨 页面调性总表
+
+
+背景色  黑 / 深灰 (#121212–#1C1C1C)
+点缀色  铜金 / 暖白光 (#C6A984 / #F2F2F2)
+字体  英文 Playfair Display · 中文 思源宋体 Light
+节奏  图–文–留白交替，如展览节奏
+整体气质  精准 · 静谧 · 充满力量的理性美感
+
+
+

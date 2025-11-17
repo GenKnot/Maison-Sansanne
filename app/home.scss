@@ -1,0 +1,320 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 96px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        color: #2c2c2c;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 4px;
+        color: #2c2c2c;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle-en {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #666;
+        font-style: italic;
+    }
+
+    .scroll-indicator {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .scroll-line {
+            width: 1px;
+            height: 60px;
+            background: #2c2c2c;
+            animation: scrollDown 2s infinite;
+        }
+    }
+}
+
+@keyframes scrollDown {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.3;
+    }
+}
+
+.manifesto-section,
+.philosophy-section {
+    padding: 120px 0;
+    background: #f5f5f5;
+
+    .section-title {
+        font-size: 48px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #2c2c2c;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #666;
+        font-style: italic;
+    }
+
+    .manifesto-text,
+    .philosophy-text {
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 18px;
+        color: #2c2c2c;
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .lead-text {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .closing-text {
+            margin-top: 50px;
+            font-weight: 400;
+        }
+    }
+}
+
+.culture-section {
+    padding: 120px 0;
+    background: #ffffff;
+
+    .culture-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .culture-item {
+        position: relative;
+        aspect-ratio: 3/4;
+        overflow: hidden;
+
+        &:hover {
+            .culture-image img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .culture-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img {
+            transition: transform 0.6s ease;
+        }
+    }
+
+    .culture-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 40px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        color: #ffffff;
+    }
+
+    .culture-title {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .culture-title-en {
+        font-size: 16px;
+        font-weight: 300;
+        font-style: italic;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+
+    .culture-description {
+        font-size: 14px;
+        line-height: 1.8;
+        opacity: 0.9;
+    }
+}
+
+.dual-line-section {
+    .dual-line-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 100vh;
+    }
+
+    .dual-line-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        overflow: hidden;
+
+        &:hover {
+            .dual-line-bg img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .dual-line-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+
+        img {
+            transition: transform 0.6s ease;
+        }
+    }
+
+    .dual-line-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .dual-line-content {
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .dual-line-title {
+        font-size: 42px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .dual-line-subtitle {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+        margin-bottom: 10px;
+        opacity: 0.9;
+    }
+
+    .dual-line-tagline {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+
+    .dual-line-description {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        opacity: 0.9;
+    }
+
+    .dual-line-cta {
+        display: inline-block;
+        padding: 15px 40px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #ffffff;
+            color: #2c2c2c;
+        }
+    }
+}
+
+.essence-section {
+    padding: 120px 0;
+    background: #1c1c1c;
+    color: #ffffff;
+
+    .essence-text {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2;
+        font-size: 20px;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .essence-closing {
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-section .hero-title {
+        font-size: 64px;
+    }
+
+    .culture-section .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dual-line-section .dual-line-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-title {
+        font-size: 48px;
+    }
+
+    .manifesto-section,
+    .philosophy-section {
+        padding: 80px 20px;
+    }
+
+    .dual-line-section .dual-line-item {
+        padding: 60px 30px;
+    }
+}

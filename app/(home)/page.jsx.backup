@@ -1,0 +1,23 @@
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+import Hero from "@/components/pages/home/hero";
+import Manifesto from "@/components/pages/home/manifesto";
+import Culture from "@/components/pages/home/culture";
+import Philosophy from "@/components/pages/home/philosophy";
+import DualLine from "@/components/pages/home/dual-line";
+import Essence from "@/components/pages/home/essence";
+
+export default function Home() {
+    return (
+        <>
+            <Header />
+            <Hero />
+            <Manifesto />
+            <Culture />
+            <Philosophy />
+            <DualLine />
+            <Essence />
+            <Footer />
+        </>
+    );
+}

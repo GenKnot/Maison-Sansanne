@@ -1,0 +1,57 @@
+"use client";
+import Link from "next/link";
+import React from "react";
+import Navigation from "./ui/navigation";
+import useSticky from "@/hooks/useSticky";
+import Image from "next/image";
+import HamburgerBtn from "./ui/hamburger-btn";
+
+export default function Header() {
+    const scrolling = useSticky(50);
+    const sticky = useSticky(650);
+
+    return (
+        <header
+            className={`site-header site-header--sticky site-header--black site-header--menu-left  ${
+                scrolling ? "scrolling" : ""
+            } ${sticky ? "reveal-header" : ""}`}
+        >
+            <div>
+                <nav className="navbar site-navbar">
+                    <div className="brand">
+                        <Link href="/" className="brand-link">
+                            <Image
+                                height={60}
+                                width={270}
+                                className="brand-logo"
+                                src="/maison-sansanne-web-logo.svg"
+                                alt="Maison Sansanne"
+                                priority
+                                style={{ width: 'auto', height: '60px' }}
+                            />
+                        </Link>
+                    </div>
+                    <div className="menu-block-wrapper ">
+                        <div className="menu-overlay" />
+                        <nav className="menu-block">
+                            <Navigation />
+                        </nav>
+                    </div>
+
+                    <HamburgerBtn />
+
+                    <div className="header-cta-btn-wrapper">
+                        <div className="header-group-1">
+                            <a
+                                className="menu-link-item"
+                                href="mailto:info@maisonsansanne.com"
+                            >
+                                <div className="menu-btn">Contact</div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    );
+}
