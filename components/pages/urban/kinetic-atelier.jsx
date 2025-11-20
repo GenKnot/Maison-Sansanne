@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function KineticAtelierContent() {
-    const { t } = useLanguage();
+    const { t, locale } = useLanguage();
     const sectionsRef = useRef([]);
     
     useEffect(() => {
@@ -52,11 +52,11 @@ export default function KineticAtelierContent() {
                 <div className="container">
                     <div className="project-hero__content">
                         <h1 className="project-hero__title">
-                            <span className="title-main">Kinetic Atelier</span>
+                            <span className="title-main">{t('kineticAtelier.title')}</span>
                             <span className="title-decoration"></span>
                         </h1>
-                        <p className="project-hero__subtitle">能量工坊 · 动势陈列</p>
-                        <p className="project-hero__tagline">The Architecture of Structured Power</p>
+                        <p className="project-hero__subtitle">{t('kineticAtelier.subtitle')}</p>
+                        <p className="project-hero__tagline">{t('kineticAtelier.tagline')}</p>
                     </div>
                 </div>
             </section>
@@ -67,9 +67,7 @@ export default function KineticAtelierContent() {
                         <div className="col-lg-9">
                             <div className="project-intro__content">
                                 <p className="project-intro__text">
-                                    以"动能美学"重构当代男性风格的零售场域。
-                                    <br />
-                                    这是一个高端男装运动品牌零售店，深色基底、金属肌理与线性光带构建出力量与克制的平衡。
+                                    {t('kineticAtelier.intro')}
                                 </p>
                             </div>
                         </div>
@@ -82,12 +80,9 @@ export default function KineticAtelierContent() {
                     <div className="row align-items-center">
                         <div className="col-lg-6 order-lg-1 order-2">
                             <div className="project-text">
-                                <h3 className="project-text__subtitle">动势，是节奏。陈列，是结构。</h3>
+                                <h3 className="project-text__subtitle">{t('kineticAtelier.conceptTitle')}</h3>
                                 <p className="project-text__desc">
-                                    让商品不再被摆放，而是被组织、提纯、结构化呈现。
-                                    <br /><br />
-                                    深色石材、黑色木饰面与金属细节形成空间的骨架，线性光带如同能量轴线，引导顾客的视线与动线。
-                                    这不是传统的零售空间，而是一场关于力量、态度与当代男性气质的表达。
+                                    {t('kineticAtelier.conceptDesc')}
                                 </p>
                             </div>
                         </div>
@@ -103,9 +98,9 @@ export default function KineticAtelierContent() {
             <section className="project-section project-display" ref={addToRefs}>
                 <div className="container">
                     <div className="text-center mb-5">
-                        <h3 className="project-section__title">结构化陈列 · 光的节奏</h3>
+                        <h3 className="project-section__title">{t('kineticAtelier.displayTitle')}</h3>
                         <p className="project-section__desc">
-                            每一个陈列单元都是精确计算的结果，光线成为空间的指挥棒
+                            {t('kineticAtelier.displayDesc')}
                         </p>
                     </div>
                     <div className="row gutter-x-40">
@@ -132,7 +127,7 @@ export default function KineticAtelierContent() {
                             </div>
                             <div className="project-text text-center mt-4">
                                 <p className="project-text__desc">
-                                    顾客在光影与体块之间移动，像在一条被精准调校的能量轴线上前进
+                                    {t('kineticAtelier.atmosphereDesc')}
                                 </p>
                             </div>
                         </div>
@@ -148,7 +143,7 @@ export default function KineticAtelierContent() {
                                 <Image src="/images/projects/kinetic-atelier/X7.jpg" alt="Material Detail" width={800} height={1000} />
                             </div>
                             <div className="project-image-caption">
-                                <p>金属与镜面 · 力量的反射</p>
+                                <p>{t('kineticAtelier.caption1')}</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -156,7 +151,7 @@ export default function KineticAtelierContent() {
                                 <Image src="/images/projects/kinetic-atelier/X8.jpg" alt="Light System" width={800} height={1000} />
                             </div>
                             <div className="project-image-caption">
-                                <p>线性光带 · 动线的指引</p>
+                                <p>{t('kineticAtelier.caption2')}</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -164,7 +159,7 @@ export default function KineticAtelierContent() {
                                 <Image src="/images/projects/kinetic-atelier/X9.jpg" alt="Brand Atmosphere" width={800} height={1000} />
                             </div>
                             <div className="project-image-caption">
-                                <p>品牌氛围 · 气质的塑造</p>
+                                <p>{t('kineticAtelier.caption3')}</p>
                             </div>
                         </div>
                     </div>
@@ -175,14 +170,14 @@ export default function KineticAtelierContent() {
                 <div className="container">
                     <div className="project-ending__content">
                         <h2 className="project-ending__quote">
-                            空间所呈现的不是"商品"，而是一种关于力量、态度与当代男性气质的表达
+                            {t('kineticAtelier.closing')}
                         </h2>
                         <p className="project-ending__quote-en">
-                            Where structure meets motion, retail becomes art.
+                            {t('kineticAtelier.closingEn')}
                         </p>
                         <div className="project-ending__divider"></div>
                         <p className="project-ending__keywords">
-                            深色节奏 · 金属肌理 · 光线指引 · 当代男性气质 · 动势逻辑
+                            {t('kineticAtelier.keywords')}
                         </p>
                     </div>
                 </div>

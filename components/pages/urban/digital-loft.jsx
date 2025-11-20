@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function DigitalLoftContent() {
-    const { t } = useLanguage();
+    const { t, locale } = useLanguage();
     const sectionsRef = useRef([]);
     
     useEffect(() => {
@@ -52,11 +52,11 @@ export default function DigitalLoftContent() {
                 <div className="container">
                     <div className="project-hero__content">
                         <h1 className="project-hero__title">
-                            <span className="title-main">Digital Loft</span>
+                            <span className="title-main">{t('digitalLoft.title')}</span>
                             <span className="title-decoration"></span>
                         </h1>
-                        <p className="project-hero__subtitle">数光之阁</p>
-                        <p className="project-hero__tagline">The Architecture of Creative Logic</p>
+                        <p className="project-hero__subtitle">{t('digitalLoft.subtitle')}</p>
+                        <p className="project-hero__tagline">{t('digitalLoft.tagline')}</p>
                     </div>
                 </div>
             </section>
@@ -67,9 +67,7 @@ export default function DigitalLoftContent() {
                         <div className="col-lg-9">
                             <div className="project-intro__content">
                                 <p className="project-intro__text">
-                                    在光与逻辑之间，理性找到它的温度。
-                                    <br />
-                                    这是一个数码体验与办公的复合空间，蓝色光带贯穿始终，模块化的逻辑与玻璃幕墙构建出冷静而纯粹的秩序。
+                                    {t('digitalLoft.intro')}
                                 </p>
                             </div>
                         </div>
@@ -82,12 +80,9 @@ export default function DigitalLoftContent() {
                     <div className="row align-items-center">
                         <div className="col-lg-5 order-lg-1 order-2">
                             <div className="project-text">
-                                <h3 className="project-text__subtitle">逻辑为骨，光为肤</h3>
+                                <h3 className="project-text__subtitle">{t('digitalLoft.spaceTitle')}</h3>
                                 <p className="project-text__desc">
-                                    空间以蓝色光带为导向，串联起接待、工作、社交的不同场景。
-                                    <br /><br />
-                                    玻璃、金属与混凝土构成理性的框架，而光线的流动赋予了空间情绪的层次。
-                                    这是数字时代的办公美学——冷静、有序，却不失人的温度。
+                                    {t('digitalLoft.spaceDesc')}
                                 </p>
                             </div>
                         </div>
@@ -103,9 +98,9 @@ export default function DigitalLoftContent() {
             <section className="project-section project-diagram" ref={addToRefs}>
                 <div className="container">
                     <div className="text-center mb-5">
-                        <h3 className="project-section__title">结构是一种隐形的代码</h3>
+                        <h3 className="project-section__title">{t('digitalLoft.diagramTitle')}</h3>
                         <p className="project-section__desc">
-                            平面与剖面揭示了空间的底层逻辑——每一条动线、每一个节点，都是精确计算的结果
+                            {t('digitalLoft.diagramDesc')}
                         </p>
                     </div>
                     <div className="row gutter-x-40">
@@ -114,7 +109,7 @@ export default function DigitalLoftContent() {
                                 <Image src="/images/projects/digital-loft/g1.jpg" alt="Floor Plan" width={1080} height={1350} />
                             </div>
                             <div className="project-image-caption">
-                                <p>平面布局 · 功能分区</p>
+                                <p>{t('digitalLoft.caption1')}</p>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -122,7 +117,7 @@ export default function DigitalLoftContent() {
                                 <Image src="/images/projects/digital-loft/g2.jpg" alt="Section" width={1080} height={1350} />
                             </div>
                             <div className="project-image-caption">
-                                <p>剖面逻辑 · 空间关系</p>
+                                <p>{t('digitalLoft.caption2')}</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +127,7 @@ export default function DigitalLoftContent() {
                                 <Image src="/images/projects/digital-loft/g3.jpg" alt="Detail Plan" width={1080} height={1350} />
                             </div>
                             <div className="project-image-caption">
-                                <p>细部设计 · 材质构成</p>
+                                <p>{t('digitalLoft.caption3')}</p>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -140,7 +135,7 @@ export default function DigitalLoftContent() {
                                 <Image src="/images/projects/digital-loft/g4.jpg" alt="Elevation" width={1080} height={1350} />
                             </div>
                             <div className="project-image-caption">
-                                <p>立面分析 · 光线系统</p>
+                                <p>{t('digitalLoft.caption4')}</p>
                             </div>
                         </div>
                     </div>
@@ -151,14 +146,14 @@ export default function DigitalLoftContent() {
                 <div className="container">
                     <div className="project-ending__content">
                         <h2 className="project-ending__quote">
-                            在光与逻辑之间，理性找到它的温度
+                            {t('digitalLoft.closing')}
                         </h2>
                         <p className="project-ending__quote-en">
-                            Where light meets logic, rationality finds its warmth.
+                            {t('digitalLoft.closingEn')}
                         </p>
                         <div className="project-ending__divider"></div>
                         <p className="project-ending__keywords">
-                            光 · 逻辑 · 理性 · 温度 · 数字美学
+                            {t('digitalLoft.keywords')}
                         </p>
                     </div>
                 </div>

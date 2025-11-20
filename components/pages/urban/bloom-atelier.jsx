@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function BloomAtelierContent() {
-    const { t } = useLanguage();
+    const { t, locale } = useLanguage();
     const sectionsRef = useRef([]);
     
     useEffect(() => {
@@ -70,11 +70,11 @@ export default function BloomAtelierContent() {
                 <div className="container">
                     <div className="project-hero__content">
                         <h1 className="project-hero__title">
-                            <span className="title-main">Bloom Atelier</span>
+                            <span className="title-main">{t('bloomAtelier.title')}</span>
                             <span className="title-decoration"></span>
                         </h1>
-                        <p className="project-hero__subtitle">绽放工坊</p>
-                        <p className="project-hero__tagline">The Architecture of Gentle Encounters</p>
+                        <p className="project-hero__subtitle">{t('bloomAtelier.subtitle')}</p>
+                        <p className="project-hero__tagline">{t('bloomAtelier.tagline')}</p>
                     </div>
                 </div>
             </section>
@@ -85,9 +85,7 @@ export default function BloomAtelierContent() {
                         <div className="col-lg-9">
                             <div className="project-intro__content">
                                 <p className="project-intro__text">
-                                    在城市的理性几何中，Bloom Atelier 用一棵花树，重新定义了"温度"在商业空间中的存在方式。
-                                    <br />
-                                    这是一个咖啡与烘焙的体验空间，也是一场关于光、秩序与自然的对话。
+                                    {t('bloomAtelier.intro')}
                                 </p>
                             </div>
                         </div>
@@ -100,12 +98,9 @@ export default function BloomAtelierContent() {
                     <div className="row align-items-center">
                         <div className="col-lg-6 order-lg-1 order-2">
                             <div className="project-text">
-                                <h3 className="project-text__subtitle">光与秩序的交融</h3>
+                                <h3 className="project-text__subtitle">{t('bloomAtelier.conceptTitle')}</h3>
                                 <p className="project-text__desc">
-                                    浅灰混凝土、柔木肌理与金线交织，像是城市秩序的延伸——却被光与花的有机形态轻轻打破。
-                                    <br /><br />
-                                    空间以长廊为轴线，以花树为核心，让理性的结构容纳温柔的呼吸。
-                                    每一处材质的转折，都是情绪的节点；每一束光的落下，都是时间的标记。
+                                    {t('bloomAtelier.conceptDesc')}
                                 </p>
                             </div>
                         </div>
@@ -123,11 +118,9 @@ export default function BloomAtelierContent() {
                     <Image src="/images/projects/bloom-atelier/C4.jpg" alt="Atmosphere" width={1920} height={1080} />
                     <div className="project-fullwidth-image__overlay scroll-reveal-overlay">
                         <div className="container">
-                            <h3 className="project-overlay__title scroll-reveal-text">空间的温度</h3>
+                            <h3 className="project-overlay__title scroll-reveal-text">{t('bloomAtelier.atmosphereTitle')}</h3>
                             <p className="project-overlay__desc scroll-reveal-text">
-                                空间以柔光组织秩序，让理性容得温柔。
-                                <br />
-                                花树成为视觉与情绪的中心，在灰与木的克制中，绽放出生命的柔软。
+                                {t('bloomAtelier.atmosphereDesc')}
                             </p>
                         </div>
                     </div>
@@ -137,9 +130,9 @@ export default function BloomAtelierContent() {
             <section className="project-section project-material" ref={addToRefs}>
                 <div className="container">
                     <div className="text-center mb-5">
-                        <h3 className="project-section__title">材质与秩序</h3>
+                        <h3 className="project-section__title">{t('bloomAtelier.materialTitle')}</h3>
                         <p className="project-section__desc">
-                            灰、木、金三者构成结构的微感语言
+                            {t('bloomAtelier.materialDesc')}
                         </p>
                     </div>
                     <div className="row gutter-x-40">
@@ -148,7 +141,7 @@ export default function BloomAtelierContent() {
                                 <Image src="/images/projects/bloom-atelier/C2.jpg" alt="Material Detail" width={900} height={675} />
                             </div>
                             <div className="project-image-caption">
-                                <p>混凝土的理性与木质的温度，在金线的勾勒下形成微妙的平衡</p>
+                                <p>{t('bloomAtelier.materialCaption1')}</p>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -156,7 +149,7 @@ export default function BloomAtelierContent() {
                                 <Image src="/images/projects/bloom-atelier/C3.jpg" alt="Human Moment" width={900} height={675} />
                             </div>
                             <div className="project-image-caption">
-                                <p>当理性有了呼吸，空间便有了灵魂和自洽</p>
+                                <p>{t('bloomAtelier.materialCaption2')}</p>
                             </div>
                         </div>
                     </div>
@@ -171,11 +164,9 @@ export default function BloomAtelierContent() {
                                 <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="project-text">
-                                            <h3 className="project-text__subtitle">花的中心</h3>
+                                            <h3 className="project-text__subtitle">{t('bloomAtelier.detailTitle')}</h3>
                                             <p className="project-text__desc">
-                                                在理性的结构中，花树不是装饰，而是空间情绪的核心。
-                                                <br /><br />
-                                                它让秩序有了呼吸，让几何有了生命，让商业空间找回了人性的温度。
+                                                {t('bloomAtelier.detailDesc')}
                                             </p>
                                         </div>
                                     </div>
@@ -195,14 +186,14 @@ export default function BloomAtelierContent() {
                 <div className="container">
                     <div className="project-ending__content">
                         <h2 className="project-ending__quote">
-                            在理性的结构中，让花开成为一种温度
+                            {t('bloomAtelier.closing')}
                         </h2>
                         <p className="project-ending__quote-en">
-                            Where structure breathes, blossoms become warmth.
+                            {t('bloomAtelier.closingEn')}
                         </p>
                         <div className="project-ending__divider"></div>
                         <p className="project-ending__keywords">
-                            都市静谧 · 柔光秩序 · 木质理性 · 花的中心 · 温度感
+                            {t('bloomAtelier.keywords')}
                         </p>
                     </div>
                 </div>
