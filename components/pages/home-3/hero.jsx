@@ -2,13 +2,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Hero() {
+    const { t } = useLanguage();
+    
     const titles = [
-        "光韵与气息之间",
-        "东方的克制",
-        "法式的优雅",
-        "北美的现代"
+        t('hero.typing1'),
+        t('hero.typing2'),
+        t('hero.typing3'),
+        t('hero.typing4')
     ];
 
     const images = [
@@ -85,7 +88,7 @@ export default function Hero() {
             <div className="hero-section-03_wrapper">
                 <div className="container ">
                     <div className="row gutter-y-40 flex-lg-row-reverse justify-content-center align-items-center ">
-                        <div className="offset-xl-1 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-9">
+                        <div className="offset-xl-1 col-xl-5 col-lg-6 col-12 px-0 px-lg-3">
                             <div className="hero-content-03_image-3 hero-image-slider">
                                 {images.map((image, index) => (
                                     <Image
@@ -118,11 +121,7 @@ export default function Hero() {
                                         <span className="typing-cursor">|</span>
                                     </h1>
                                     <p>
-                                        空间不止是容器，而是一种光韵与气息的共鸣。
-                                        Maison Sansanne 的设计语言，诞生于三种文化之间的自然交融——
-                                        东方的克制、法式的优雅、北美的现代。
-                                        我们用设计去描绘生活的节奏，让光有韵，气有息，
-                                        让空间成为一种可被感知、可被记住的存在。
+                                        {t('manifesto.lead')} {t('manifesto.p2')} {t('essence.p3')}
                                     </p>
                                 </div>
                                 <div className="hero-content-03_button-group">
@@ -130,26 +129,23 @@ export default function Hero() {
                                         href="/contact"
                                         className="btn btn-primary hvr-fill-black"
                                     >
-                                        联系我们
+                                        {t('common.contact')}
                                         <i className="fa-solid fa-arrow-right icon-arrow-corner" />
                                     </Link>
                                     <Link
                                         href="/urban"
                                         className="btn btn-black hvr-black-primary"
                                     >
-                                        查看作品
+                                        {t('common.viewWork')}
                                         <i className="fa-solid fa-arrow-right icon-arrow-corner" />
                                     </Link>
                                 </div>
                             </div>
                             <div className="hero-contact-widgets">
                                 <div className="contact-widget">
-                                    <h3 className="contact-widget__title">
-                                        邮箱
-                                    </h3>
-                                    <span className="contact-widget__text">
-                                        info@maisonsansanne.com
-                                    </span>
+                                    <a href="mailto:info@33studio.com" className="contact-widget__email">
+                                        info@33studio.com
+                                    </a>
                                 </div>
                             </div>
                         </div>

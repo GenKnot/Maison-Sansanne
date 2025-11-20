@@ -72,14 +72,14 @@ export default function Project() {
 
     const collections = [
         {
-            title: "Maison Sansanne Urban",
+            title: "33STUDIO Urban",
             mainSubtitle: "Architecture of Emotion",
             mainDescription: "理性的秩序 · 柔性的情感",
             link: "/urban",
             projects: urbanProjects
         },
         {
-            title: "Maison Sansanne Home",
+            title: "33STUDIO Home",
             mainSubtitle: "Where Light Becomes Home",
             mainDescription: "光的诗学 · 生活的温度",
             link: "/home",

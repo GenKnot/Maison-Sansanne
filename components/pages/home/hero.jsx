@@ -1,7 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Hero() {
+    const { t } = useLanguage();
+    
     return (
         <section className="hero-section">
             <div className="hero-content">
@@ -11,9 +14,9 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.3 }}
                     className="hero-text"
                 >
-                    <h1 className="hero-title">Maison Sansanne</h1>
-                    <p className="hero-subtitle">光韵与气息之间</p>
-                    <p className="hero-subtitle-en">Between Light and Breath</p>
+                    <h1 className="hero-title">{t('hero.title')}</h1>
+                    <p className="hero-subtitle">{t('hero.subtitle')}</p>
+                    <p className="hero-subtitle-en">{t('hero.subtitleEn')}</p>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}

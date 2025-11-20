@@ -7,10 +7,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { useDispatch, useSelector } from "react-redux";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function SidebarNavigation() {
     const { isSidebarActive } = useSelector((state) => state.toggle);
     const dispatch = useDispatch();
+    const { t } = useLanguage();
 
     const path = usePathname();
 
@@ -21,8 +23,8 @@ export default function SidebarNavigation() {
                     <Image
                         height={50}
                         width={220}
-                        src="/maison-sansanne-web-logo.svg"
-                        alt="Maison Sansanne"
+                        src="/Logo33.png"
+                        alt="33STUDIO"
                         style={{ width: 'auto', height: '50px' }}
                     />
                 </Link>
@@ -33,7 +35,7 @@ export default function SidebarNavigation() {
                         item?.dropdown ? (
                             <SubMenu
                                 key={i}
-                                label={item.label}
+                                label={t(item.labelKey)}
                                 className={
                                     isParentActive(item, path)
                                         ? "ui-nav-active2"
@@ -44,7 +46,7 @@ export default function SidebarNavigation() {
                                     item2?.dropdown ? (
                                         <SubMenu
                                             key={i2}
-                                            label={item2.label}
+                                            label={t(item2.labelKey)}
                                             className={
                                                 isParentActive(item2, path)
                                                     ? "ui-nav-active2"
@@ -71,7 +73,7 @@ export default function SidebarNavigation() {
                                                             ></Link>
                                                         }
                                                     >
-                                                        {item3.label}
+                                                        {t(item3.labelKey)}
                                                     </MenuItem>
                                                 )
                                             )}
@@ -95,7 +97,7 @@ export default function SidebarNavigation() {
                                                 ></Link>
                                             }
                                         >
-                                            {item2.label}
+                                            {t(item2.labelKey)}
                                         </MenuItem>
                                     )
                                 )}
@@ -115,7 +117,7 @@ export default function SidebarNavigation() {
                                     ></Link>
                                 }
                             >
-                                {item.label}
+                                {t(item.labelKey)}
                             </MenuItem>
                         )
                     )}

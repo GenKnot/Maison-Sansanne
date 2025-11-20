@@ -1,21 +1,19 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/lib/i18n/context";
 
 const footerLinks = [
     {
-        label: "About",
-        url: "/about",
-    },
-    {
-        label: "Urban",
+        labelKey: "nav.urban",
         url: "/urban",
     },
     {
-        label: "Home",
+        labelKey: "nav.living",
         url: "/home",
     },
     {
-        label: "Contact",
+        labelKey: "nav.contact",
         url: "/contact",
     },
 ];
@@ -39,7 +37,7 @@ const footerSocialLinks = [
 ];
 
 export default function Footer() {
-    // date
+    const { t } = useLanguage();
     const date = new Date().getFullYear();
 
     return (
@@ -61,14 +59,14 @@ export default function Footer() {
                                     <Image
                                         height={80}
                                         width={360}
-                                        src="/maison-sansanne-web-logo.png"
-                                        alt="Maison Sansanne"
+                                        src="/Logo33.png"
+                                        alt="33 Studio"
                                         style={{ width: 'auto', height: '80px' }}
                                     />
                                 </div>
                                 <p>
-                                    光韵与气息之间<br />
-                                    Between Light and Breath
+                                    {t('hero.subtitle')}<br />
+                                    {t('hero.subtitleEn')}
                                 </p>
                             </div>
                             <form action="#" className="newsletter-form-1">
@@ -92,7 +90,7 @@ export default function Footer() {
                                             Find us
                                         </h3>
                                         <p>
-                                            Maison Sansanne <br />
+                                            33STUDIO <br />
                                             Montreal, QC
                                             <br />
                                             Canada
@@ -104,8 +102,8 @@ export default function Footer() {
                                         </h3>
                                         <ul className="list-style-regular row-gap-8">
                                             <li>
-                                                <Link href="mailto:info@maisonsansanne.com">
-                                                    info@maisonsansanne.com
+                                                <Link href="mailto:info@33studio.com">
+                                                    info@33studio.com
                                                 </Link>
                                             </li>
                                         </ul>
@@ -118,7 +116,7 @@ export default function Footer() {
                                     {footerLinks?.map((item, i) => (
                                         <li key={i}>
                                             <Link href={item.url}>
-                                                {item.label}
+                                                {t(item.labelKey)}
                                             </Link>
                                         </li>
                                     ))}
@@ -132,7 +130,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="copyright-row">
                         <div className="copyright-text">
-                            <p>© {date} Maison Sansanne</p>
+                            <p>© {date} 33 Studio. {t('common.allRightsReserved')}</p>
                         </div>
                         <ul className="divider-navigation-inline footer-social-list">
                             {footerSocialLinks?.map((item, i) => (

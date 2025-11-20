@@ -1,6 +1,6 @@
 
 🧭 页头（1 屏）
-主标题： Maison Sansanne Urban
+主标题： 33STUDIO Urban
 副标题： Architecture of Emotion｜当秩序拥有了情绪
 引言文字（建议打字动效进入）：
 城市不只是功能的集合， 它是一种被建筑、光线与人共同书写的语言。 
@@ -26,7 +26,7 @@
 
 
 
-Maison Sansanne Urban
+33STUDIO Urban
 
 序号1
 名称：Civic Syntax
@@ -78,7 +78,7 @@ Maison Sansanne Urban
 
 
 页尾（结语）
-Maison Sansanne Urban 记录的不是城市的形状， 而是建筑与光线之间，那些关于秩序与情感的共振。 Not the shape of the city, but the resonance between architecture and emotion.
+33STUDIO Urban 记录的不是城市的形状， 而是建筑与光线之间，那些关于秩序与情感的共振。 Not the shape of the city, but the resonance between architecture and emotion.
 背景建议： 使用 Kinetic Sanctuary 的光流图像， 黑底白字，文字淡入直至只留最后一行。
 下方：
 联系方式 / “Studio Sansanne（商业线）”导流链接

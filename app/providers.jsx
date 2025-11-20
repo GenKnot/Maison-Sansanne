@@ -13,6 +13,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SidebarNavigation from "@/components/header/sidebar-navigation";
 import Preloader from "@/components/ui/preloader";
+import { LanguageProvider } from "@/lib/i18n/context";
 
 export default function Providers({ children }) {
     // AOS init
@@ -33,18 +34,20 @@ export default function Providers({ children }) {
     return (
         <>
             <Provider store={store}>
-                {/* preloader */}
-                <Preloader />
-                {children}
-                {/* toastify initialize  */}
-                <ToastContainer
-                    theme="light"
-                    autoClose={800}
-                    position="top-center"
-                    hideProgressBar={true}
-                />
-                {/* sidebar navigation */}
-                <SidebarNavigation />
+                <LanguageProvider>
+                    {/* preloader */}
+                    <Preloader />
+                    {children}
+                    {/* toastify initialize  */}
+                    <ToastContainer
+                        theme="light"
+                        autoClose={800}
+                        position="top-center"
+                        hideProgressBar={true}
+                    />
+                    {/* sidebar navigation */}
+                    <SidebarNavigation />
+                </LanguageProvider>
             </Provider>
         </>
     );

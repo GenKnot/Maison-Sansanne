@@ -1,12 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Preloader() {
     const path = usePathname();
     const preloaderRef = useRef(null);
-
-    // preloader effect
+    const { t } = useLanguage();
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -30,8 +30,8 @@ export default function Preloader() {
         <>
             <div ref={preloaderRef} className="preloader-wrapp">
                 <div className="preloader-content">
-                    <h1 className="preloader-title">Maison Sansanne</h1>
-                    <p className="preloader-subtitle">光韵与气息之间</p>
+                    <h1 className="preloader-title">{t('hero.title')}</h1>
+                    <p className="preloader-subtitle">{t('hero.subtitle')}</p>
                 </div>
                 <span className="bar" />
                 <span className="bar" />

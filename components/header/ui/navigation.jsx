@@ -5,10 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { toggleSidebar } from "@/redux/features/toggles/toggleSlice";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Navigation() {
     const path = usePathname();
     const dispatch = useDispatch();
+    const { t } = useLanguage();
 
     const closeMenu = () => {
         dispatch(toggleSidebar());
@@ -18,7 +20,7 @@ export default function Navigation() {
         <>
             <div className="mobile-menu-head">
                 <div className="mobile-menu-logo">
-                    <img src="/maison-sansanne-logo.svg" alt="Maison Sansanne" style={{ height: '40px', width: 'auto' }} />
+                    <img src="/Logo33.png" alt="33 Studio" style={{ height: '40px', width: 'auto' }} />
                 </div>
                 <div className="mobile-menu-close" onClick={closeMenu}>×</div>
             </div>
@@ -32,100 +34,36 @@ export default function Navigation() {
                                     path === item.url ? "ui-nav-active" : ""
                                 }`}
                             >
-                                {item.label}
+                                {t(item.labelKey)}
                             </Link>
                         ) : (
                             <>
-                                <a
+                                <Link
+                                    href={item.url}
                                     className={`nav-link-item drop-trigger ${
                                         isParentActive(item, path)
                                             ? "ui-nav-active"
                                             : ""
                                     }`}
                                 >
-                                    {item.label}
-                                    {item.dropdown ? (
-                                        <i className="fas fa-angle-down" />
-                                    ) : null}
-                                </a>
-                                <div className="sub-menu" id="submenu-3">
+                                    {t(item.labelKey)}
+                                    <i className="fas fa-angle-down" />
+                                </Link>
+                                <div className="sub-menu">
                                     <ul className="sub-menu_list">
-                                        {item.dropdown?.map((item2, i2) =>
-                                            !item2.dropdown ? (
-                                                <li
-                                                    key={i2}
-                                                    className="sub-menu_item"
-                                                >
-                                                    <Link href={item2.url}>
-                                                        <span
-                                                            className={`menu-item-text ${
-                                                                item2.url ===
-                                                                path
-                                                                    ? "active"
-                                                                    : ""
-                                                            }`}
-                                                        >
-                                                            {item2.label}
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                            ) : (
-                                                <li
-                                                    key={i2}
-                                                    className="sub-menu_item nav-item-has-children child-item"
-                                                >
-                                                    <a className="sub-menu__item-link">
-                                                        <span
-                                                            className={`menu-item-text ${
-                                                                isParentActive(
-                                                                    item2,
-                                                                    path
-                                                                )
-                                                                    ? "active"
-                                                                    : ""
-                                                            }`}
-                                                        >
-                                                            {item2.label}
-                                                        </span>
-                                                        <i className="fas fa-angle-right" />
-                                                    </a>
-                                                    <div
-                                                        className="sub-menu child-sub"
-                                                        id="submenu-22"
+                                        {item.dropdown?.map((item2, i2) => (
+                                            <li key={i2} className="sub-menu_item">
+                                                <Link href={item2.url}>
+                                                    <span
+                                                        className={`menu-item-text ${
+                                                            item2.url === path ? "active" : ""
+                                                        }`}
                                                     >
-                                                        <ul className="sub-menu_list">
-                                                            {item2.dropdown.map(
-                                                                (item3, i3) => (
-                                                                    <li
-                                                                        key={i3}
-                                                                        className="sub-menu_item"
-                                                                    >
-                                                                        <Link
-                                                                            href={
-                                                                                item3.url
-                                                                            }
-                                                                        >
-                                                                            <span
-                                                                                className={`menu-item-text ${
-                                                                                    item3.url ===
-                                                                                    path
-                                                                                        ? "active"
-                                                                                        : ""
-                                                                                }`}
-                                                                            >
-                                                                                {
-                                                                                    item3.label
-                                                                                }
-                                                                            </span>
-                                                                        </Link>
-                                                                    </li>
-                                                                )
-                                                            )}
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            )
-                                        )}
+                                                        {t(item2.labelKey)}
+                                                    </span>
+                                                </Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </>

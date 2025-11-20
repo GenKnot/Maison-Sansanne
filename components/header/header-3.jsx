@@ -4,10 +4,13 @@ import Navigation from "./ui/navigation";
 import Image from "next/image";
 import useSticky from "@/hooks/useSticky";
 import HamburgerBtn from "./ui/hamburger-btn";
+import LanguageSwitcher from "@/components/ui/language-switcher";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Header3() {
     const scrolling = useSticky(50);
     const sticky = useSticky(650);
+    const { t } = useLanguage();
 
     return (
         <header
@@ -23,8 +26,8 @@ export default function Header3() {
                                 height={80}
                                 width={360}
                                 className="brand-logo"
-                                src="/maison-sansanne-web-logo.svg"
-                                alt="Maison Sansanne"
+                                src="/Logo33.png"
+                                alt="33 Studio"
                                 priority
                                 style={{ width: 'auto', height: '80px' }}
                             />
@@ -38,12 +41,13 @@ export default function Header3() {
                     </div>
                     <HamburgerBtn />
                     <div className="header-cta-btn-wrapper">
-                        <div className="header-group-3">
+                        <div className="header-group-3" style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+                            <LanguageSwitcher />
                             <a
-                                href="mailto:info@maisonsansanne.com"
+                                href="mailto:info@33studio.com"
                                 className="btn btn-primary hvr-fill-black"
                             >
-                                Contact
+                                {t('common.contact')}
                                 <i className="fa-solid fa-arrow-right icon-arrow-corner" />
                             </a>
                         </div>

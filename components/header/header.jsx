@@ -24,8 +24,8 @@ export default function Header() {
                                 height={60}
                                 width={270}
                                 className="brand-logo"
-                                src="/maison-sansanne-web-logo.svg"
-                                alt="Maison Sansanne"
+                                src="/Logo33.png"
+                                alt="33STUDIO"
                                 priority
                                 style={{ width: 'auto', height: '60px' }}
                             />
@@ -44,7 +44,7 @@ export default function Header() {
                         <div className="header-group-1">
                             <a
                                 className="menu-link-item"
-                                href="mailto:info@maisonsansanne.com"
+                                href="mailto:info@33studio.com"
                             >
                                 <div className="menu-btn">Contact</div>
                             </a>

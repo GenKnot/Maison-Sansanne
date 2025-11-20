@@ -146,3 +146,60 @@
 
 @import "./home.scss";
 @import "./urban-home.scss";
+
+// Civic Syntax Project Page
+@import "./urban/civic-syntax/civic-syntax.scss";
+
+@import "./urban/chromatic-playform/chromatic-playform.scss";
+
+@import "./urban/verdant-court/verdant-court.scss";
+
+@import "./urban/civic-canopy/civic-canopy.scss";
+
+@import "./urban/bloom-atelier/bloom-atelier.scss";
+@import "./urban/digital-loft/digital-loft.scss";
+@import "./urban/cyber-reverb/cyber-reverb.scss";
+@import "./urban/kinetic-atelier/kinetic-atelier.scss";
+
+.project-image {
+    line-height: 0;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.project-text__desc {
+    br {
+        display: block;
+        content: "";
+        margin-top: 0.5em;
+    }
+}
+
+.project-section {
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 0;
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.05) 50%, transparent 100%);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

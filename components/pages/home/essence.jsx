@@ -1,7 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/i18n/context";
 
 export default function Essence() {
+    const { t } = useLanguage();
+    
+    const renderText = (text) => {
+        return text.split('\n').map((line, i) => (
+            <span key={i}>
+                {line}
+                {i < text.split('\n').length - 1 && <br />}
+            </span>
+        ));
+    };
+    
     return (
         <section className="essence-section">
             <div className="container">
@@ -13,23 +25,11 @@ export default function Essence() {
                     className="essence-content"
                 >
                     <div className="essence-text">
-                        <p>
-                            Maison Sansanne 相信，<br />
-                            空间的本质，是文化、理性与情绪的平衡。
-                        </p>
-                        <p>
-                            它在东方的克制中沉静，<br />
-                            在法式的优雅中舒展，<br />
-                            在北美的现代中生长。
-                        </p>
-                        <p>
-                            我们用设计去描绘生活的节奏，<br />
-                            让光有韵，气有息，<br />
-                            让空间成为一种可被感知、可被记住的存在。
-                        </p>
+                        <p>{renderText(t('essence.p1'))}</p>
+                        <p>{renderText(t('essence.p2'))}</p>
+                        <p>{renderText(t('essence.p3'))}</p>
                         <p className="essence-closing">
-                            光韵与气息之间，<br />
-                            生活缓缓展开。
+                            {renderText(t('essence.closing'))}
                         </p>
                     </div>
                 </motion.div>

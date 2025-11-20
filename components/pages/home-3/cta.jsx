@@ -17,7 +17,7 @@ export default function Cta() {
                                     光韵与气息之间，生活缓缓展开
                                 </h1>
                                 <p className="text-sand" style={{fontSize: '1.25rem', lineHeight: '2', maxWidth: '900px', margin: '0 auto'}}>
-                                    Maison Sansanne 相信，空间的本质，是文化、理性与情绪的平衡。
+                                    33STUDIO 相信，空间的本质，是文化、理性与情绪的平衡。
                                     它在东方的克制中沉静，在法式的优雅中舒展，在北美的现代中生长。
                                     我们用设计去描绘生活的节奏，让光有韵，气有息，
                                     让空间成为一种可被感知、可被记住的存在。

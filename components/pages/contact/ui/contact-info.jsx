@@ -22,7 +22,7 @@ export default function ContactInfo() {
                         />
                     </div>
                     <span className="contact-widget-02__text">
-                        Maison Sansanne<br />
+                        33STUDIO<br />
                         Montreal, QC, Canada
                     </span>
                 </div>
@@ -36,7 +36,7 @@ export default function ContactInfo() {
                         />
                     </div>
                     <span className="contact-widget-02__text">
-                        info@maisonsansanne.com
+                        info@33studio.com
                     </span>
                 </div>
             </div>

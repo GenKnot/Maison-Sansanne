@@ -24,7 +24,7 @@ export default function Philosophy({ style }) {
                                 光，是时间的节奏；气息，是情绪的温度
                             </h2>
                             <p className="mb-24">
-                                Maison Sansanne 以光为线索、以材质为语言、以生活为核心，
+                                33STUDIO 以光为线索、以材质为语言、以生活为核心，
                                 在理性结构与情感体验之间寻找平衡。
                             </p>
                             <p>

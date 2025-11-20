@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-    title: "Maison Sansanne | Architecture & Interior Design",
-    description: "光韵与气息之间 - Between Light and Breath. Maison Sansanne 融合东方克制、法式优雅与北美现代的建筑与室内设计工作室。",
+    title: "33 Studio | Architecture & Interior Design",
+    description: "Between Light and Breath. 33 Studio blends Eastern restraint, French elegance, and North American modernity in architecture and interior design.",
 };
 
 export default function RootLayout({ children }) {

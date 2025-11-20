@@ -1,6 +1,15 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Culture() {
+    const sectionRef = useRef(null);
+    const cardsRef = useRef([]);
+
     const cultures = [
         {
             image: "/images/culture/oriental-order.jpg",
@@ -22,6 +31,64 @@ export default function Culture() {
         }
     ];
 
+    useEffect(() => {
+        const section = sectionRef.current;
+        const cards = cardsRef.current.filter(card => card !== null);
+
+        if (!section || cards.length === 0) return;
+
+        const mm = gsap.matchMedia();
+
+        mm.add("(max-width: 991px)", () => {
+            const container = section.querySelector('.row');
+            const totalCards = cards.length;
+            
+            gsap.set(container, {
+                display: 'flex',
+                flexWrap: 'nowrap',
+                width: `${totalCards * 100}vw`
+            });
+
+            cards.forEach((card, index) => {
+                gsap.set(card, {
+                    width: '100vw',
+                    flex: '0 0 100vw'
+                });
+            });
+
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top top",
+                end: `+=${window.innerHeight * (totalCards - 1)}`,
+                pin: true,
+                scrub: 1,
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const moveDistance = (totalCards - 1) * 100;
+                    
+                    gsap.to(container, {
+                        x: `-${progress * moveDistance}vw`,
+                        duration: 0.1,
+                        ease: "none"
+                    });
+                }
+            });
+        });
+
+        mm.add("(min-width: 992px)", () => {
+            const container = section.querySelector('.row');
+            gsap.set(container, { clearProps: 'all' });
+            cards.forEach((card) => {
+                gsap.set(card, { clearProps: 'all' });
+            });
+        });
+
+        return () => {
+            mm.revert();
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
     return (
         <div className="culture-section section-padding bg-white">
             <div className="container">
@@ -33,44 +100,46 @@ export default function Culture() {
                                 三种文化的交融
                             </h2>
                             <p className="mt-24">
-                                这三种文化在 Maison Sansanne 的作品中彼此渗透，
+                                这三种文化在 33STUDIO 的作品中彼此渗透，
                                 共同构成了独特的设计语言
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="row gutter-y-40">
-                    {cultures.map((culture, index) => (
-                        <div 
-                            key={index} 
-                            className="col-lg-4 col-md-6"
-                            data-aos="fade-up"
-                            data-aos-duration={1000}
-                            data-aos-delay={index * 200}
-                        >
-                            <div className="culture-card">
-                                <div className="culture-card__image">
-                                    <Image
-                                        fill
-                                        src={culture.image}
-                                        alt={culture.title}
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    />
-                                </div>
-                                <div className="culture-card__content">
-                                    <h3 className="culture-card__title">
-                                        {culture.title}
-                                    </h3>
-                                    <span className="culture-card__subtitle">
-                                        {culture.subtitle}
-                                    </span>
-                                    <p className="culture-card__description">
-                                        {culture.description}
-                                    </p>
+            </div>
+            <div ref={sectionRef} className="culture-cards-wrapper">
+                <div className="container">
+                    <div className="row gutter-y-40">
+                        {cultures.map((culture, index) => (
+                            <div 
+                                key={index} 
+                                className="col-lg-4 col-md-6"
+                                ref={(el) => (cardsRef.current[index] = el)}
+                            >
+                                <div className="culture-card">
+                                    <div className="culture-card__image">
+                                        <Image
+                                            fill
+                                            src={culture.image}
+                                            alt={culture.title}
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    </div>
+                                    <div className="culture-card__content">
+                                        <h3 className="culture-card__title">
+                                            {culture.title}
+                                        </h3>
+                                        <span className="culture-card__subtitle">
+                                            {culture.subtitle}
+                                        </span>
+                                        <p className="culture-card__description">
+                                            {culture.description}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

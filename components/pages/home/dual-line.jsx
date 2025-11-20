@@ -16,8 +16,8 @@ export default function DualLine() {
                 >
                     <div className="dual-line-bg">
                         <Image
-                            src="/sansanne网站/商业设计/Maison Sansanne Urban｜Civic Syntax 当节奏成为建筑。/V1.jpg"
-                            alt="Maison Sansanne Urban"
+                            src="/sansanne网站/商业设计/33STUDIO Urban｜Civic Syntax 当节奏成为建筑。/V1.jpg"
+                            alt="33STUDIO Urban"
                             fill
                             sizes="50vw"
                             style={{ objectFit: "cover" }}
@@ -25,7 +25,7 @@ export default function DualLine() {
                         <div className="dual-line-overlay"></div>
                     </div>
                     <div className="dual-line-content">
-                        <h2 className="dual-line-title">Maison Sansanne Urban</h2>
+                        <h2 className="dual-line-title">33STUDIO Urban</h2>
                         <p className="dual-line-subtitle">Architecture of Emotion</p>
                         <p className="dual-line-tagline">理性的秩序 · 柔性的情感</p>
                         <p className="dual-line-description">
@@ -47,8 +47,8 @@ export default function DualLine() {
                 >
                     <div className="dual-line-bg">
                         <Image
-                            src="/sansanne网站/室内设计/Maison Sansanne Home｜Quiet Elevation 在城市的高度中，找到光与比例的平衡与宁静/X风格1.jpg"
-                            alt="Maison Sansanne Home"
+                            src="/sansanne网站/室内设计/33STUDIO Home｜Quiet Elevation 在城市的高度中，找到光与比例的平衡与宁静/X风格1.jpg"
+                            alt="33STUDIO Home"
                             fill
                             sizes="50vw"
                             style={{ objectFit: "cover" }}
@@ -56,7 +56,7 @@ export default function DualLine() {
                         <div className="dual-line-overlay"></div>
                     </div>
                     <div className="dual-line-content">
-                        <h2 className="dual-line-title">Maison Sansanne Home</h2>
+                        <h2 className="dual-line-title">33STUDIO Home</h2>
                         <p className="dual-line-subtitle">Where Light Becomes Home</p>
                         <p className="dual-line-tagline">光的诗学 · 生活的温度</p>
                         <p className="dual-line-description">

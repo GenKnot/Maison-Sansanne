@@ -1,0 +1,174 @@
+.civic-canopy-project {
+    background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 50%, #f5f5f5 100%);
+    animation: pageLoad 0.8s ease-out;
+    
+    @keyframes pageLoad {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .project-hero {
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+        &__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+            z-index: 2;
+        }
+        
+        &__content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        
+        &__title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            
+            .title-main {
+                display: block;
+                background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 50%, #ffffff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            
+            .title-decoration {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, transparent 0%, rgba(144, 202, 249, 0.8) 20%, rgba(144, 202, 249, 0.8) 80%, transparent 100%);
+                transform: scaleX(0);
+                animation: lineExpand 1.5s ease-out 1s forwards;
+            }
+            
+            @keyframes lineExpand {
+                to { transform: scaleX(1); }
+            }
+        }
+        
+        &__subtitle {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 300;
+            opacity: 0.95;
+        }
+    }
+    
+    .project-section {
+        padding: 100px 0;
+        
+        @media (max-width: 991px) {
+            padding: 60px 0;
+        }
+    }
+    
+    .project-intro {
+        background: transparent;
+        
+        .project-text__desc {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            line-height: 1.8;
+            color: #5c5c5c;
+        }
+    }
+    
+    .project-gallery {
+        background: transparent;
+        
+        .project-image {
+            line-height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            position: relative;
+            padding-bottom: 75%;
+            background: #f5f5f5;
+            
+            img {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: center !important;
+                vertical-align: top;
+                transition: transform 0.6s ease;
+            }
+            
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    .project-ending {
+        background: transparent;
+        padding: 120px 0;
+        
+        @media (max-width: 991px) {
+            padding: 80px 0;
+        }
+        
+        &__content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        &__quote {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+            color: #2c2c2c;
+            position: relative;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        &__keywords {
+            font-size: clamp(0.875rem, 2vw, 1.125rem);
+            font-weight: 400;
+            color: #5c5c5c;
+            letter-spacing: 0.05em;
+            margin-top: 2rem;
+        }
+    }
+}

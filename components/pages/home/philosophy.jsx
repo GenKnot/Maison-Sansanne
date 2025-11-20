@@ -20,7 +20,7 @@ export default function Philosophy() {
                             气息，是情绪的温度。
                         </p>
                         <p>
-                            Maison Sansanne 以光为线索、以材质为语言、以生活为核心，<br />
+                            33STUDIO 以光为线索、以材质为语言、以生活为核心，<br />
                             在理性结构与情感体验之间寻找平衡。
                         </p>
                         <p>
