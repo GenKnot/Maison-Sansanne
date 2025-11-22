@@ -63,7 +63,7 @@ export default function WhisperingLight() {
                     />
                 </div>
                 <div className="whispering-light__hero-content">
-                    <div className="whispering-light__brand">33 Studio Home</div>
+                    <div className="whispering-light__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`whispering-light__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Whispering Light
                     </h1>
@@ -82,10 +82,10 @@ export default function WhisperingLight() {
                             <div className="whispering-light__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    'Whispering Light 是 33 Studio Home 对"光的性格"最细腻的诠释。这座位于蒙特利尔的住宅，以自然光为核心，构建了一个既克制又充满情绪的空间。晨光透过窗帘的纹理洒落，在木面上铺开柔和的金色；午后的阳光沿着墙面滑动，轻触织物、镜面与玻璃。' :
+                                    'Whispering Light 是 33 Studio 对"光的性格"最细腻的诠释。这座位于蒙特利尔的住宅，以自然光为核心，构建了一个既克制又充满情绪的空间。晨光透过窗帘的纹理洒落，在木面上铺开柔和的金色；午后的阳光沿着墙面滑动，轻触织物、镜面与玻璃。' :
                                     locale === 'fr' ?
-                                    'Whispering Light est l\'interprétation la plus délicate de 33 Studio Home sur "le caractère de la lumière". Cette résidence montréalaise, centrée sur la lumière naturelle, construit un espace à la fois sobre et chargé d\'émotion. La lumière du matin se répand à travers la texture des rideaux, déployant un doré doux sur le bois ; la lumière de l\'après-midi glisse le long des murs, effleurant tissus, miroirs et verre.' :
-                                    'Whispering Light is 33 Studio Home\'s most delicate interpretation of "the character of light". This Montreal residence, centered on natural light, constructs a space both restrained and full of emotion. Morning light spills through curtain textures, spreading soft gold across wood; afternoon sun slides along walls, gently touching fabric, mirrors, and glass.'}
+                                    'Whispering Light est l\'interprétation la plus délicate de 33 Studio sur "le caractère de la lumière". Cette résidence montréalaise, centrée sur la lumière naturelle, construit un espace à la fois sobre et chargé d\'émotion. La lumière du matin se répand à travers la texture des rideaux, déployant un doré doux sur le bois ; la lumière de l\'après-midi glisse le long des murs, effleurant tissus, miroirs et verre.' :
+                                    'Whispering Light is 33 Studio\'s most delicate interpretation of "the character of light". This Montreal residence, centered on natural light, constructs a space both restrained and full of emotion. Morning light spills through curtain textures, spreading soft gold across wood; afternoon sun slides along walls, gently touching fabric, mirrors, and glass.'}
                                 </p>
                             </div>
                         </div>
@@ -157,13 +157,13 @@ export default function WhisperingLight() {
                     <div className="whispering-light__final-overlay">
                         <p className="whispering-light__quote">
                             {locale === 'zh' ?
-                            '光轻轻落下，在木、石与空气之间延展。33 Studio Home，以温柔的克制，书写生活的安静诗意。' :
+                            '光轻轻落下，在木、石与空气之间延展。33 Studio，以温柔的克制，书写生活的安静诗意。' :
                             locale === 'fr' ?
-                            'La lumière tombe doucement, s\'étendant entre bois, pierre et air. 33 Studio Home, avec une retenue douce, écrit la poésie tranquille de la vie.' :
-                            'Light falls gently, extending between wood, stone, and air. 33 Studio Home, with gentle restraint, writes the quiet poetry of life.'}
+                            'La lumière tombe doucement, s\'étendant entre bois, pierre et air. 33 Studio, avec une retenue douce, écrit la poésie tranquille de la vie.' :
+                            'Light falls gently, extending between wood, stone, and air. 33 Studio, with gentle restraint, writes the quiet poetry of life.'}
                         </p>
                         <p className="whispering-light__signature">
-                            — 33 Studio Home
+                            — 33 Studio
                         </p>
                     </div>
                 </div>

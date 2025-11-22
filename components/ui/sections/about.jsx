@@ -96,13 +96,16 @@ export default function About() {
                                     <span className="subtitle">
                                         {t('about.subtitle')}
                                     </span>
-                                    <h2 className={`content-title heading-md mb-32 ${locale !== 'zh' ? 'heading-md-en' : ''}`}>
+                                    <h2 
+                                        className={`content-title heading-md mb-32 ${locale !== 'zh' ? 'heading-md-en' : ''}`}
+                                        style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.875rem)' }}
+                                    >
                                         {t('about.title')}
                                     </h2>
-                                    <p className="mb-24">
+                                    <p className="mb-24" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)', lineHeight: '2.4' }}>
                                         {t('about.p1')}
                                     </p>
-                                    <p>
+                                    <p style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)', lineHeight: '2.4' }}>
                                         {t('about.p2')}
                                     </p>
                                 </div>

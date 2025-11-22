@@ -111,7 +111,10 @@ export default function Project() {
                     <span className="subtitle text-scorpion">
                         {t('projectSection.subtitle')}
                     </span>
-                    <h2 className={`section-heading__title heading-md text-sand ${locale !== 'zh' ? 'heading-md-en' : ''}`}>
+                    <h2 
+                        className={`section-heading__title heading-md text-sand ${locale !== 'zh' ? 'heading-md-en' : ''}`}
+                        style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.875rem)' }}
+                    >
                         {t('projectSection.title')}
                     </h2>
                 </div>
@@ -133,27 +136,27 @@ export default function Project() {
                                         ))}
                                     </div>
                                     <div className="collection-card__content">
-                                        <h3 className="collection-card__title text-sand">
+                                        <h3 className="collection-card__title text-sand" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.5rem)' }}>
                                             {collection.title}
                                         </h3>
-                                        <span className="collection-card__subtitle text-scorpion">
+                                        <span className="collection-card__subtitle text-scorpion" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)' }}>
                                             {collection.mainSubtitle}
                                         </span>
-                                        <p className="collection-card__description text-sand">
+                                        <p className="collection-card__description text-sand" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)', lineHeight: '2.4' }}>
                                             {collection.mainDescription}
                                         </p>
                                         <div className="collection-card__project">
-                                            <h4 className="collection-card__project-name text-sand">
+                                            <h4 className="collection-card__project-name text-sand" style={{ fontSize: 'clamp(0.95rem, 2.2vw, 1.25rem)' }}>
                                                 {collection.projects[projectIndices[collectionIndex]].name}
                                             </h4>
-                                            <p className="collection-card__project-subtitle text-scorpion">
+                                            <p className="collection-card__project-subtitle text-scorpion" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)' }}>
                                                 {collection.projects[projectIndices[collectionIndex]].subtitle}
                                             </p>
-                                            <p className="collection-card__project-desc text-scorpion">
+                                            <p className="collection-card__project-desc text-scorpion" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.9rem)' }}>
                                                 {collection.projects[projectIndices[collectionIndex]].description}
                                             </p>
                                         </div>
-                                        <span className="collection-card__link text-sand">
+                                        <span className="collection-card__link text-sand" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)' }}>
                                             {t('projectSection.exploreCollection')} <i className="fa-solid fa-arrow-right" />
                                         </span>
                                     </div>

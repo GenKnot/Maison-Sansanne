@@ -63,7 +63,7 @@ export default function LunarStillness() {
                     />
                 </div>
                 <div className="lunar-stillness__hero-content">
-                    <div className="lunar-stillness__brand">33 Studio Home</div>
+                    <div className="lunar-stillness__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`lunar-stillness__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Lunar Stillness
                     </h1>
@@ -82,10 +82,10 @@ export default function LunarStillness() {
                             <div className="lunar-stillness__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    'Lunar Stillness 是 33 Studio Home 对"理性之美"的一次静默探索。这栋位于蒙特利尔的别墅，以"月光"为意象，将冷静的光线与温润的材质交织，形成一种理智与诗意并存的秩序感。' :
+                                    'Lunar Stillness 是 33 Studio 对"理性之美"的一次静默探索。这栋位于蒙特利尔的别墅，以"月光"为意象，将冷静的光线与温润的材质交织，形成一种理智与诗意并存的秩序感。' :
                                     locale === 'fr' ?
-                                    'Lunar Stillness est une exploration silencieuse de 33 Studio Home sur "la beauté de la rationalité". Cette villa montréalaise, avec le "clair de lune" comme métaphore, entrelace lumière calme et matériaux chaleureux, formant un sens de l\'ordre où rationalité et poésie coexistent.' :
-                                    'Lunar Stillness is 33 Studio Home\'s silent exploration of "the beauty of rationality". This Montreal villa, with "moonlight" as metaphor, interweaves calm light and warm materials, forming a sense of order where rationality and poetry coexist.'}
+                                    'Lunar Stillness est une exploration silencieuse de 33 Studio sur "la beauté de la rationalité". Cette villa montréalaise, avec le "clair de lune" comme métaphore, entrelace lumière calme et matériaux chaleureux, formant un sens de l\'ordre où rationalité et poésie coexistent.' :
+                                    'Lunar Stillness is 33 Studio\'s silent exploration of "the beauty of rationality". This Montreal villa, with "moonlight" as metaphor, interweaves calm light and warm materials, forming a sense of order where rationality and poetry coexist.'}
                                 </p>
                             </div>
                         </div>
@@ -153,13 +153,13 @@ export default function LunarStillness() {
                             <div className="lunar-stillness__closing-text">
                                 <p className="lunar-stillness__quote">
                                     {locale === 'zh' ?
-                                    '月光落下，思想在空间中回响。33 Studio Home，以冷静与温度，雕刻出理性的柔光。' :
+                                    '月光落下，思想在空间中回响。33 Studio，以冷静与温度，雕刻出理性的柔光。' :
                                     locale === 'fr' ?
-                                    'Le clair de lune tombe, la pensée résonne dans l\'espace. 33 Studio Home, avec calme et chaleur, sculpte la douce lumière de la rationalité.' :
-                                    'Moonlight falls, thought resonates in space. 33 Studio Home, with calm and warmth, sculpts the soft light of rationality.'}
+                                    'Le clair de lune tombe, la pensée résonne dans l\'espace. 33 Studio, avec calme et chaleur, sculpte la douce lumière de la rationalité.' :
+                                    'Moonlight falls, thought resonates in space. 33 Studio, with calm and warmth, sculpts the soft light of rationality.'}
                                 </p>
                                 <p className="lunar-stillness__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

@@ -65,8 +65,7 @@ export default function Home() {
                         <div className="manifesto-content">
                             <h2 className="manifesto-title">{t('home.manifestoTitle')}</h2>
                             <div className="manifesto-text">
-                                <p>{t('home.manifestoP1')}</p>
-                                <p>{t('home.manifestoP2')}</p>
+                                <p style={{ whiteSpace: 'pre-line' }}>{t('home.manifestoP1')}</p>
                             </div>
                         </div>
                     </div>
@@ -77,28 +76,7 @@ export default function Home() {
                         <div className="about-content">
                             <h2 className="about-title">{t('home.aboutTitle')}</h2>
                             <div className="about-text">
-                                <p>{t('home.aboutP1')}</p>
-                                <p>{t('home.aboutP2')}</p>
-                                <p>{t('home.aboutP3')}</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="philosophy-section" ref={addToRefs}>
-                    <div className="container">
-                        <div className="philosophy-content">
-                            <div className="philosophy-text">
-                                <p>{t('home.philosophyP1')}</p>
-                                <p>{t('home.philosophyP2')}</p>
-                            </div>
-                            <div className="philosophy-principles">
-                                <ul>
-                                    <li>{t('home.principle1')}</li>
-                                    <li>{t('home.principle2')}</li>
-                                    <li>{t('home.principle3')}</li>
-                                    <li>{t('home.principle4')}</li>
-                                </ul>
+                                <p style={{ whiteSpace: 'pre-line' }}>{t('home.aboutP1')}</p>
                             </div>
                         </div>
                     </div>
@@ -107,8 +85,7 @@ export default function Home() {
                 <section className="closing-section" ref={addToRefs}>
                     <div className="container">
                         <div className="closing-content">
-                            <p className="closing-text">{t('home.closingP1')}</p>
-                            <p className="closing-text">{t('home.closingP2')}</p>
+                            <p className="closing-text" style={{ whiteSpace: 'pre-line' }}>{t('home.closingP1')}</p>
                         </div>
                     </div>
                 </section>

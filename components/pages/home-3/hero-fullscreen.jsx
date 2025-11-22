@@ -69,10 +69,14 @@ export default function HeroFullscreen() {
             <div className="hero-fullscreen__content">
                 <div className="container">
                     <div className="hero-fullscreen__text">
-                        <h1 className="hero-fullscreen__title" data-text={slides[currentSlide].title}>
+                        <h1 
+                            className="hero-fullscreen__title" 
+                            data-text={slides[currentSlide].title}
+                            style={{ fontSize: 'clamp(1.5rem, 5vw, 3.5rem)' }}
+                        >
                             {slides[currentSlide].title}
                         </h1>
-                        <p className="hero-fullscreen__subtitle">
+                        <p className="hero-fullscreen__subtitle" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.25rem)' }}>
                             {slides[currentSlide].subtitle}
                         </p>
                         <div className="hero-fullscreen__buttons">

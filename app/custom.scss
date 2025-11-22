@@ -73,6 +73,35 @@
 }
 
 .culture-section {
+    .section-heading {
+        .subtitle {
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            font-weight: 400;
+            color: #999;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .section-heading__title {
+            font-size: clamp(1.125rem, 3.5vw, 1.875rem);
+            font-weight: 400;
+            color: #1a1a1a;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        p {
+            font-size: clamp(0.875rem, 2vw, 1.125rem);
+            line-height: 2.4;
+            color: #3a3a3a;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+    }
+    
     .culture-card {
         height: 100%;
         display: flex;
@@ -113,25 +142,30 @@
         }
 
         &__title {
-            font-size: 1.75rem;
-            font-weight: 500;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 400;
             margin-bottom: 8px;
             color: var(--black-2);
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
         }
 
         &__subtitle {
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 1.5vw, 0.95rem);
             color: var(--scorpion);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 16px;
             display: block;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
         }
 
         &__description {
-            font-size: 1rem;
-            line-height: 1.8;
+            font-size: clamp(0.875rem, 2vw, 1.125rem);
+            line-height: 2.4;
             color: var(--black-2);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
         }
     }
 }
@@ -427,5 +461,86 @@
 .mobile-menu-head {
     .mobile-menu-close {
         color: #2c2c2c !important;
+    }
+}
+
+
+.project-section {
+    .section-heading {
+        .subtitle {
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .section-heading__title {
+            font-size: clamp(1.125rem, 3.5vw, 1.875rem);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+    }
+    
+    .collection-card {
+        &__title {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 400;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__subtitle {
+            font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__description {
+            font-size: clamp(0.875rem, 2vw, 1.125rem);
+            line-height: 2.4;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__project-name {
+            font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+            font-weight: 400;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__project-subtitle {
+            font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__project-desc {
+            font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        &__link {
+            font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+    }
+}
+
+.cta-section-03 {
+    .cta-content-03__title {
+        font-size: clamp(1.5rem, 4.5vw, 2.75rem);
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        line-height: 1.5;
+        font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    }
+    
+    .cta-content-03__text-block p {
+        font-size: clamp(0.875rem, 2vw, 1.125rem);
+        line-height: 2.4;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
     }
 }

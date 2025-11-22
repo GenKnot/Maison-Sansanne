@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
     title: "33 Studio | Architecture & Interior Design",
-    description: "Between Light and Breath. 33 Studio blends Eastern restraint, French elegance, and North American modernity in architecture and interior design.",
+    description: "Where cultures converge, and light defines the architecture within. 33 Studio blends Eastern restraint, French elegance, and North American modernity in architecture and interior design.",
 };
 
 export default function RootLayout({ children }) {

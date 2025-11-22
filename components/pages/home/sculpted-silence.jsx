@@ -63,7 +63,7 @@ export default function SculptedSilence() {
                     />
                 </div>
                 <div className="sculpted-silence__hero-content">
-                    <div className="sculpted-silence__brand">33 Studio Home</div>
+                    <div className="sculpted-silence__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`sculpted-silence__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Sculpted Silence
                     </h1>
@@ -82,10 +82,10 @@ export default function SculptedSilence() {
                             <div className="sculpted-silence__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    '本案为蒙特利尔的一栋私宅，33 Studio Home 以"黑白之间的秩序"为线索，探索空间在光影下的理性与情绪。深黑墙体构建出空间的静默感，乳白色 boucle 沙发与石材茶几形成肌理对话，灯光则以极小的笔触介入，让明暗、体积与反射成为真正的装饰。' :
+                                    '本案为蒙特利尔的一栋私宅，33 Studio 以"黑白之间的秩序"为线索，探索空间在光影下的理性与情绪。深黑墙体构建出空间的静默感，乳白色 boucle 沙发与石材茶几形成肌理对话，灯光则以极小的笔触介入，让明暗、体积与反射成为真正的装饰。' :
                                     locale === 'fr' ?
-                                    'Cette résidence privée montréalaise, 33 Studio Home explore la rationalité et l\'émotion de l\'espace sous la lumière et l\'ombre avec "l\'ordre entre noir et blanc" comme fil conducteur. Les murs noirs profonds construisent le silence de l\'espace, le canapé bouclé blanc cassé et la table basse en pierre forment un dialogue de texture, la lumière intervient avec les touches les plus minimes, faisant de l\'ombre, du volume et de la réflexion la véritable décoration.' :
-                                    'This Montreal private residence, 33 Studio Home explores the rationality and emotion of space under light and shadow with "order between black and white" as the thread. Deep black walls construct the silence of space, off-white boucle sofa and stone coffee table form a texture dialogue, lighting intervenes with minimal touches, making shadow, volume, and reflection the true decoration.'}
+                                    'Cette résidence privée montréalaise, 33 Studio explore la rationalité et l\'émotion de l\'espace sous la lumière et l\'ombre avec "l\'ordre entre noir et blanc" comme fil conducteur. Les murs noirs profonds construisent le silence de l\'espace, le canapé bouclé blanc cassé et la table basse en pierre forment un dialogue de texture, la lumière intervient avec les touches les plus minimes, faisant de l\'ombre, du volume et de la réflexion la véritable décoration.' :
+                                    'This Montreal private residence, 33 Studio explores the rationality and emotion of space under light and shadow with "order between black and white" as the thread. Deep black walls construct the silence of space, off-white boucle sofa and stone coffee table form a texture dialogue, lighting intervenes with minimal touches, making shadow, volume, and reflection the true decoration.'}
                                 </p>
                             </div>
                         </div>
@@ -132,13 +132,13 @@ export default function SculptedSilence() {
                             <div className="sculpted-silence__closing-text">
                                 <p className="sculpted-silence__quote">
                                     {locale === 'zh' ?
-                                    '当空间不再喧哗，材质开始说话。33 Studio Home，在黑与白之间，找到情绪的重量。' :
+                                    '当空间不再喧哗，材质开始说话。33 Studio，在黑与白之间，找到情绪的重量。' :
                                     locale === 'fr' ?
-                                    'Quand l\'espace cesse de crier, les matériaux commencent à parler. 33 Studio Home, entre noir et blanc, trouve le poids de l\'émotion.' :
-                                    'When space stops clamoring, materials begin to speak. 33 Studio Home, between black and white, finds the weight of emotion.'}
+                                    'Quand l\'espace cesse de crier, les matériaux commencent à parler. 33 Studio, entre noir et blanc, trouve le poids de l\'émotion.' :
+                                    'When space stops clamoring, materials begin to speak. 33 Studio, between black and white, finds the weight of emotion.'}
                                 </p>
                                 <p className="sculpted-silence__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

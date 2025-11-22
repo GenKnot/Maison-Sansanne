@@ -63,7 +63,7 @@ export default function FlowingLight() {
                     />
                 </div>
                 <div className="flowing-light__hero-content">
-                    <div className="flowing-light__brand">33 Studio Home</div>
+                    <div className="flowing-light__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`flowing-light__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Flowing Light
                     </h1>
@@ -82,10 +82,10 @@ export default function FlowingLight() {
                             <div className="flowing-light__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    'Flowing Light 是 33 Studio Home 对"光与生活关系"的一次温柔诠释。这座位于蒙特利尔的公寓项目，以自然光为叙事主线，让空间在时间的流转中变得有生命。' :
+                                    'Flowing Light 是 33 Studio 对"光与生活关系"的一次温柔诠释。这座位于蒙特利尔的公寓项目，以自然光为叙事主线，让空间在时间的流转中变得有生命。' :
                                     locale === 'fr' ?
-                                    'Flowing Light est une interprétation douce de 33 Studio Home sur "la relation entre lumière et vie". Ce projet d\'appartement à Montréal utilise la lumière naturelle comme fil narratif, donnant vie à l\'espace dans le flux du temps.' :
-                                    'Flowing Light is 33 Studio Home\'s gentle interpretation of "the relationship between light and life". This Montreal apartment project uses natural light as its narrative thread, bringing space to life through the passage of time.'}
+                                    'Flowing Light est une interprétation douce de 33 Studio sur "la relation entre lumière et vie". Ce projet d\'appartement à Montréal utilise la lumière naturelle comme fil narratif, donnant vie à l\'espace dans le flux du temps.' :
+                                    'Flowing Light is 33 Studio\'s gentle interpretation of "the relationship between light and life". This Montreal apartment project uses natural light as its narrative thread, bringing space to life through the passage of time.'}
                                 </p>
                             </div>
                         </div>
@@ -165,13 +165,13 @@ export default function FlowingLight() {
                             <div className="flowing-light__closing-text">
                                 <p className="flowing-light__quote">
                                     {locale === 'zh' ?
-                                    '光不只是照亮，它让时间流动，让生活变得有方向。33 Studio Home，以光为笔，描绘宁静的节奏。' :
+                                    '光不只是照亮，它让时间流动，让生活变得有方向。33 Studio，以光为笔，描绘宁静的节奏。' :
                                     locale === 'fr' ?
-                                    'La lumière ne fait pas qu\'éclairer, elle fait couler le temps, donne une direction à la vie. 33 Studio Home, avec la lumière comme pinceau, dessine le rythme de la tranquillité.' :
-                                    'Light doesn\'t just illuminate, it makes time flow, gives life direction. 33 Studio Home, with light as brush, paints the rhythm of tranquility.'}
+                                    'La lumière ne fait pas qu\'éclairer, elle fait couler le temps, donne une direction à la vie. 33 Studio, avec la lumière comme pinceau, dessine le rythme de la tranquillité.' :
+                                    'Light doesn\'t just illuminate, it makes time flow, gives life direction. 33 Studio, with light as brush, paints the rhythm of tranquility.'}
                                 </p>
                                 <p className="flowing-light__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

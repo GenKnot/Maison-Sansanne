@@ -63,7 +63,7 @@ export default function ObsidianCalm() {
                     />
                 </div>
                 <div className="obsidian-calm__hero-content">
-                    <div className="obsidian-calm__brand">33 Studio Home</div>
+                    <div className="obsidian-calm__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`obsidian-calm__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Obsidian Calm
                     </h1>
@@ -82,10 +82,10 @@ export default function ObsidianCalm() {
                             <div className="obsidian-calm__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    '坐落于蒙特利尔市中心的 Obsidian Calm，是 33 Studio Home 对「静谧奢华」的又一次精确诠释。空间以深灰石材、黑色木饰面与金属细节为主调，形成冷静而克制的节奏。壁炉的火光成为唯一的温度源，在石与影的折射中，构建出安静而坚定的生活语境。' :
+                                    '坐落于蒙特利尔市中心的 Obsidian Calm，是 33 Studio 对「静谧奢华」的又一次精确诠释。空间以深灰石材、黑色木饰面与金属细节为主调，形成冷静而克制的节奏。壁炉的火光成为唯一的温度源，在石与影的折射中，构建出安静而坚定的生活语境。' :
                                     locale === 'fr' ?
-                                    'Situé au centre-ville de Montréal, Obsidian Calm est une autre interprétation précise de 33 Studio Home sur le "luxe tranquille". L\'espace, dominé par la pierre grise profonde, les revêtements en bois noir et les détails métalliques, forme un rythme calme et sobre. La lumière du foyer devient la seule source de chaleur, construisant dans la réfraction de pierre et d\'ombre un contexte de vie calme et ferme.' :
-                                    'Located in downtown Montreal, Obsidian Calm is 33 Studio Home\'s another precise interpretation of "quiet luxury". The space, dominated by deep gray stone, black wood paneling, and metallic details, forms a calm and restrained rhythm. Firelight becomes the only source of warmth, constructing in the refraction of stone and shadow a quiet yet firm living context.'}
+                                    'Situé au centre-ville de Montréal, Obsidian Calm est une autre interprétation précise de 33 Studio sur le "luxe tranquille". L\'espace, dominé par la pierre grise profonde, les revêtements en bois noir et les détails métalliques, forme un rythme calme et sobre. La lumière du foyer devient la seule source de chaleur, construisant dans la réfraction de pierre et d\'ombre un contexte de vie calme et ferme.' :
+                                    'Located in downtown Montreal, Obsidian Calm is 33 Studio\'s another precise interpretation of "quiet luxury". The space, dominated by deep gray stone, black wood paneling, and metallic details, forms a calm and restrained rhythm. Firelight becomes the only source of warmth, constructing in the refraction of stone and shadow a quiet yet firm living context.'}
                                 </p>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ export default function ObsidianCalm() {
                                     'Deep black like stone, light hidden within. Every reflection is an echo of calm. Obsidian Calm—silence is the most enduring luxury.'}
                                 </p>
                                 <p className="obsidian-calm__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

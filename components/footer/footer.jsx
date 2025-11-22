@@ -65,8 +65,12 @@ export default function Footer() {
                                     />
                                 </div>
                                 <p>
-                                    {t('hero.subtitle')}<br />
-                                    {t('hero.subtitleEn')}
+                                    {t('essenceClosing.text').split('\n').map((line, i, arr) => (
+                                        <span key={i}>
+                                            {line || '\u00A0'}
+                                            {i < arr.length - 1 && <br />}
+                                        </span>
+                                    ))}
                                 </p>
                             </div>
                             <form action="#" className="newsletter-form-1">

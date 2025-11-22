@@ -3,7 +3,7 @@ import Footer from "@/components/footer/footer";
 import TheStudySeries from "@/components/pages/home/the-study-series";
 
 export const metadata = {
-    title: "The Study Series - 33 Studio Home",
+    title: "The Study Series - 33 Studio",
     description: "Explorations in Texture & Light - Design as continuous inquiry"
 };
 

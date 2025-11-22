@@ -66,7 +66,7 @@ export default function QuietElevation() {
                     />
                 </div>
                 <div className="quiet-elevation__hero-content">
-                    <div className="quiet-elevation__brand">33 Studio Home</div>
+                    <div className="quiet-elevation__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`quiet-elevation__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Quiet Elevation
                     </h1>
@@ -185,7 +185,7 @@ export default function QuietElevation() {
                                     'In urban heights, we seek not luxury, but a quiet strength—letting light become the protagonist of space, proportion become the language of emotion, emptiness become the breathing of life.'}
                                 </p>
                                 <p className="quiet-elevation__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

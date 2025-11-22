@@ -63,7 +63,7 @@ export default function WhisperOfScent() {
                     />
                 </div>
                 <div className="whisper-of-scent__hero-content">
-                    <div className="whisper-of-scent__brand">33 Studio Home</div>
+                    <div className="whisper-of-scent__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`whisper-of-scent__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Whisper of Scent
                     </h1>
@@ -82,10 +82,10 @@ export default function WhisperOfScent() {
                             <div className="whisper-of-scent__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    '这是一个属于香气、光线与材质的空间。33 Studio Home 在这座位于蒙特利尔的公寓中，以柔和的中性色调和克制的比例，描绘了一种日常的优雅。每一处摆设都如同一场细节的对话：BYREDO 的烛香、黑白的画作、金属的光泽，都被安放在恰好的节奏中。' :
+                                    '这是一个属于香气、光线与材质的空间。33 Studio 在这座位于蒙特利尔的公寓中，以柔和的中性色调和克制的比例，描绘了一种日常的优雅。每一处摆设都如同一场细节的对话：BYREDO 的烛香、黑白的画作、金属的光泽，都被安放在恰好的节奏中。' :
                                     locale === 'fr' ?
-                                    'C\'est un espace appartenant au parfum, à la lumière et aux matériaux. Dans cet appartement montréalais, 33 Studio Home dépeint une élégance quotidienne avec des tons neutres doux et des proportions sobres. Chaque arrangement est comme un dialogue de détails : les bougies BYREDO, les œuvres en noir et blanc, l\'éclat métallique, tous placés dans un rythme parfait.' :
-                                    'This is a space belonging to scent, light, and materials. In this Montreal apartment, 33 Studio Home depicts everyday elegance with soft neutral tones and restrained proportions. Each arrangement is like a dialogue of details: BYREDO candles, black and white artworks, metallic luster, all placed in perfect rhythm.'}
+                                    'C\'est un espace appartenant au parfum, à la lumière et aux matériaux. Dans cet appartement montréalais, 33 Studio dépeint une élégance quotidienne avec des tons neutres doux et des proportions sobres. Chaque arrangement est comme un dialogue de détails : les bougies BYREDO, les œuvres en noir et blanc, l\'éclat métallique, tous placés dans un rythme parfait.' :
+                                    'This is a space belonging to scent, light, and materials. In this Montreal apartment, 33 Studio depicts everyday elegance with soft neutral tones and restrained proportions. Each arrangement is like a dialogue of details: BYREDO candles, black and white artworks, metallic luster, all placed in perfect rhythm.'}
                                 </p>
                             </div>
                         </div>
@@ -164,13 +164,13 @@ export default function WhisperOfScent() {
                             <div className="whisper-of-scent__closing-text">
                                 <p className="whisper-of-scent__quote">
                                     {locale === 'zh' ?
-                                    '光，是家的韵律；香气，是记忆的语言。33 Studio Home，让生活的每一刻，都柔和而有声。' :
+                                    '光，是家的韵律；香气，是记忆的语言。33 Studio，让生活的每一刻，都柔和而有声。' :
                                     locale === 'fr' ?
-                                    'La lumière est le rythme de la maison ; le parfum est le langage de la mémoire. 33 Studio Home rend chaque moment de la vie doux et sonore.' :
-                                    'Light is the rhythm of home; scent is the language of memory. 33 Studio Home makes every moment of life soft and resonant.'}
+                                    'La lumière est le rythme de la maison ; le parfum est le langage de la mémoire. 33 Studio rend chaque moment de la vie doux et sonore.' :
+                                    'Light is the rhythm of home; scent is the language of memory. 33 Studio makes every moment of life soft and resonant.'}
                                 </p>
                                 <p className="whisper-of-scent__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

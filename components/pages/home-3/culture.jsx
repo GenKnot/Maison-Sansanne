@@ -98,10 +98,13 @@ export default function Culture() {
                     <div className="col-xxl-8 col-xl-9">
                         <div className="section-heading text-center">
                             <span className="subtitle">{t('culture.subtitle')}</span>
-                            <h2 className={`section-heading__title heading-md ${locale !== 'zh' ? 'heading-md-en' : ''}`}>
+                            <h2 
+                                className={`section-heading__title heading-md ${locale !== 'zh' ? 'heading-md-en' : ''}`}
+                                style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.875rem)' }}
+                            >
                                 {t('culture.title')}
                             </h2>
-                            <p className="mt-24">
+                            <p className="mt-24" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)', lineHeight: '2.4' }}>
                                 {t('culture.intro')}
                             </p>
                         </div>
@@ -127,13 +130,13 @@ export default function Culture() {
                                         />
                                     </div>
                                     <div className="culture-card__content">
-                                        <h3 className="culture-card__title">
+                                        <h3 className="culture-card__title" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.5rem)' }}>
                                             {t(culture.titleKey)}
                                         </h3>
-                                        <span className="culture-card__subtitle">
+                                        <span className="culture-card__subtitle" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)' }}>
                                             {t(culture.subtitleKey)}
                                         </span>
-                                        <p className="culture-card__description">
+                                        <p className="culture-card__description" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)', lineHeight: '2.4' }}>
                                             {t(culture.descriptionKey)}
                                         </p>
                                     </div>

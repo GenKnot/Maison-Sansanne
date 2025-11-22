@@ -63,7 +63,7 @@ export default function TracesOfWarmth() {
                     />
                 </div>
                 <div className="traces-of-warmth__hero-content">
-                    <div className="traces-of-warmth__brand">33 Studio Home</div>
+                    <div className="traces-of-warmth__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`traces-of-warmth__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Traces of Warmth
                     </h1>
@@ -82,10 +82,10 @@ export default function TracesOfWarmth() {
                             <div className="traces-of-warmth__text">
                                 <p>
                                     {locale === 'zh' ?
-                                    'Traces of Warmth 是一个关于"感知"的项目。33 Studio Home 在这个住宅空间中，以最轻的笔触描绘家的质地——它没有刻意的焦点，却处处有温度的痕迹。浅灰与米白的交织，像被阳光轻触的肌理；木饰面、织物、柔焦的墙面，共同构筑出一个"看不见的温度场"。' :
+                                    'Traces of Warmth 是一个关于"感知"的项目。33 Studio 在这个住宅空间中，以最轻的笔触描绘家的质地——它没有刻意的焦点，却处处有温度的痕迹。浅灰与米白的交织，像被阳光轻触的肌理；木饰面、织物、柔焦的墙面，共同构筑出一个"看不见的温度场"。' :
                                     locale === 'fr' ?
-                                    'Traces of Warmth est un projet sur la "perception". Dans cet espace résidentiel, 33 Studio Home dépeint la texture de la maison avec les touches les plus légères—sans point focal délibéré, mais avec des traces de chaleur partout. L\'entrelacement du gris pâle et du blanc cassé, comme une texture effleurée par le soleil ; les revêtements en bois, les tissus, les murs en douceur, construisent ensemble un "champ de température invisible".' :
-                                    'Traces of Warmth is a project about "perception". In this residential space, 33 Studio Home depicts the texture of home with the lightest touches—no deliberate focal point, yet traces of warmth everywhere. The interweaving of pale gray and off-white, like texture touched by sunlight; wood paneling, fabrics, soft-focus walls, together construct an "invisible temperature field".'}
+                                    'Traces of Warmth est un projet sur la "perception". Dans cet espace résidentiel, 33 Studio dépeint la texture de la maison avec les touches les plus légères—sans point focal délibéré, mais avec des traces de chaleur partout. L\'entrelacement du gris pâle et du blanc cassé, comme une texture effleurée par le soleil ; les revêtements en bois, les tissus, les murs en douceur, construisent ensemble un "champ de température invisible".' :
+                                    'Traces of Warmth is a project about "perception". In this residential space, 33 Studio depicts the texture of home with the lightest touches—no deliberate focal point, yet traces of warmth everywhere. The interweaving of pale gray and off-white, like texture touched by sunlight; wood paneling, fabrics, soft-focus walls, together construct an "invisible temperature field".'}
                                 </p>
                             </div>
                         </div>
@@ -174,13 +174,13 @@ export default function TracesOfWarmth() {
                             <div className="traces-of-warmth__closing-text">
                                 <p className="traces-of-warmth__quote">
                                     {locale === 'zh' ?
-                                    '温度，不是被制造的，而是生活留下的痕迹。33 Studio Home，让每一处触感，都成为时间的注脚。' :
+                                    '温度，不是被制造的，而是生活留下的痕迹。33 Studio，让每一处触感，都成为时间的注脚。' :
                                     locale === 'fr' ?
-                                    'La chaleur n\'est pas fabriquée, mais les traces laissées par la vie. 33 Studio Home fait de chaque toucher une note de bas de page du temps.' :
-                                    'Warmth is not manufactured, but traces left by life. 33 Studio Home makes every touch a footnote of time.'}
+                                    'La chaleur n\'est pas fabriquée, mais les traces laissées par la vie. 33 Studio fait de chaque toucher une note de bas de page du temps.' :
+                                    'Warmth is not manufactured, but traces left by life. 33 Studio makes every touch a footnote of time.'}
                                 </p>
                                 <p className="traces-of-warmth__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>

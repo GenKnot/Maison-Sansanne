@@ -1,11 +1,7 @@
 export default [
     {
-        labelKey: "nav.home",
-        url: "/",
-    },
-    {
         labelKey: "nav.about",
-        url: "/about",
+        url: "/",
     },
     {
         labelKey: "nav.urban",

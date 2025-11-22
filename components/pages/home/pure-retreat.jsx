@@ -63,7 +63,7 @@ export default function PureRetreat() {
                     />
                 </div>
                 <div className="pure-retreat__hero-content">
-                    <div className="pure-retreat__brand">33 Studio Home</div>
+                    <div className="pure-retreat__brand">33 Studio</div>
                     <h1 ref={titleRef} className={`pure-retreat__title ${locale !== 'zh' ? 'heading-xl-en' : ''}`}>
                         Pure Retreat
                     </h1>
@@ -151,7 +151,7 @@ export default function PureRetreat() {
                                     'Between white and wood, water becomes the carrier of light. Pure Retreat—purity is the gentlest force of space.'}
                                 </p>
                                 <p className="pure-retreat__signature">
-                                    — 33 Studio Home
+                                    — 33 Studio
                                 </p>
                             </div>
                         </div>
